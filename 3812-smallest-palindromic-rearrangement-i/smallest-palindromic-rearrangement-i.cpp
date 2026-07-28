@@ -1,6 +1,7 @@
 class Solution {
 public:
     string smallestPalindrome(string s) {
+        //TIME: O(nlogn)  SPACE : O(N)
        int n = s.size();
        string left=s.substr(0,n/2);
        sort(left.begin(),left.end());
